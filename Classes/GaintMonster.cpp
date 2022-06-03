@@ -12,6 +12,7 @@ Gaint::Gaint()
 Gaint::~Gaint()
 {
 }
+void Monster::Hpchange(int Hp) { this->m_Hp = m_Hp + Hp; }
 
 bool Gaint::getSuck()
 {
@@ -49,6 +50,6 @@ void Monster::Attack(Player* player)
 	}
 	//¼ÆËãÕæÊµÉËº¦
 	int TrueDamage = (this->m_Attack - Player->m_Defense) > 0 ? (this->m_Attack - Player->m_Defense) : 1;
-	Player->m_Hp -= TrueDamage;
+	Player->Get_Hp() -= TrueDamage;
 	this->m_Hp += addHp;
 }

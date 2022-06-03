@@ -11,13 +11,15 @@ public:
     //获取是否暴击
     virtual bool getCrit() = 0;
 
-    int Get_Hp()const { return m_Hp; }
-    int Get_Attack()const { return m_Attack; }
-    int Get_Defense()const { return m_Defense; }
-    int Get_Gold()const { return m_Gold; }
-    int Get_Experience()const { return m_Exp; }
+    int Get_Hp() { return m_Hp; }
+    int Get_Attack() { return m_Attack; }
+    int Get_Defense() { return m_Defense; }
+    int Get_Gold() { return m_Gold; }
+    int Get_Experience() { return m_Exp; }
 
-    void Attack(Player* player);
+    void Hpchange(int Hp);
+
+    virtual void Attack(Player* player);
 
 protected:
     int m_Hp;    //血量
