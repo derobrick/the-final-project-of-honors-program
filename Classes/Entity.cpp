@@ -15,5 +15,5 @@ void Entity::bindSprite(Sprite* sprite)
 	auto physicsBody1 = PhysicsBody::createBox(this->m_Sprite->getContentSize(), PhysicsMaterial(0.1f, 1.0f, 0.0f));
 	physicsBody1->setCategoryBitmask(0x01);
 	physicsBody1->setCollisionBitmask(0x03);
-	this->m_Sprite->setPhysicsBody(physicsBody1)
+	this->m_Sprite->setPhysicsBody(physicsBody1);
 }
