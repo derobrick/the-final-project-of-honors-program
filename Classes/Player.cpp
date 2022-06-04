@@ -40,6 +40,7 @@ void Player::Get_Hp(int Hp)
 }
 void Player::Get_Att(int Att) { this->m_Attack = m_Attack + Att; }
 void Player::Get_Def(int Def) { this->m_Defense = m_Defense + Def; }
+void Player::Get_Exp(int Exp) { this->m_Exp = m_Exp + Exp; }
 
 
 template<typename T> 

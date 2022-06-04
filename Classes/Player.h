@@ -36,7 +36,7 @@ public:
 	void Get_Hp(int Hp);
 	void Get_Att(int Att);
 	void Get_Def(int Def);
-	void Get_Exp(int Exp)
+	void Get_Exp(int Exp);
 
 	bool fight(T monster);//Õ½¶·
 	void Move(EventKeyboard::KeyCode keyCode, Event* event);//ÐÐ×ß
