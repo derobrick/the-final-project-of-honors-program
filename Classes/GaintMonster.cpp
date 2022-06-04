@@ -49,7 +49,7 @@ void Monster::Attack(Player* player)
 
 	}
 	//¼ÆËãÕæÊµÉËº¦
-	int TrueDamage = (this->m_Attack - Player->m_Defense) > 0 ? (this->m_Attack - Player->m_Defense) : 1;
+	int TrueDamage = (this->m_Attack - Player->Look_Def()) > 0 ? (this->m_Attack - Player->Look_Def()) : 1;
 	Player->Get_Hp() -= TrueDamage;
 	this->m_Hp += addHp;
 }
