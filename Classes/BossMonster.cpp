@@ -68,7 +68,7 @@ void Monster::Attack(Player* player)
 
 	}
 	//¼ÆËãÕæÊµÉËº¦
-	int TrueDamage = (this->m_Attack - Player.Look_Def()) > 0 ? (this->m_Attack - Player.Look_Def()) : 1;
-	Player.Get_Hp() -= TrueDamage;
+	int TrueDamage = (this->m_Attack - player->Look_Def()) > 0 ? (this->m_Attack - player->Look_Def()) : 1;
+	player->Get_Hp(-TrueDamage);
 	this->m_Hp += addHp;
 }
