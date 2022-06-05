@@ -15,24 +15,32 @@ private:                                                              //分别提供
 };
 class sword :public equipment
 {
+public:
+	CREATE_FUNC(sword);
 private:
 	const int Atk = 10;
 	const int Def = 0;
 };
 class shield :public equipment
 {
+public:
+	CREATE_FUNC(shield);
 private:
 	const int Atk = 0;
 	const int Def = 10;
 };
 class Atk_gem:public equipment
 {
+public:
+	CREATE_FUNC(Atk_gem);
 private:
 	const int Atk = 5;
 	const int Def = 0;
 };
 class Def_gem :public equipment
 {
+public:
+	CREATE_FUNC(Def_gem);
 private:
 	const int Atk = 0;
 	const int Def = 10;

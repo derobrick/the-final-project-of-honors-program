@@ -14,11 +14,15 @@ private:
 };
 class big_medicine :public item                          //其中包含两种药水  加血量不同          
 {
+public:
+	CREATE_FUNC(big_medicine);
 private: 
 	const int HP = 500;
 };
 class small_medicine : public item
 {
+public:
+	CREATE_FUNC(small_medicine);
 private:
 	const int HP = 100;
 };

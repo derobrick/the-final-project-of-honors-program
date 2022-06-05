@@ -12,17 +12,19 @@ class BlueMapDoor :public mapdoor                        //ÆäÖĞ°üº¬ÈıÖÖ²»Í¬ÑÕÉ«Ã
 {
 public:
 	void contact_BlueMapDoor(Player* myplayer);           //µ÷ÓÃÆäÅö×²º¯ÊıÊÇ ÒªÒÔÖ÷½ÇÎª²ÎÊı ²¢ÅĞ¶ÏÊÇ·ñº¬ÓĞÏàÓ¦µÄÔ¿³×
+	CREATE_FUNC(BlueMapDoor);
 };
 class RedMapDoor :public mapdoor
 {
 public:
-
+	CREATE_FUNC(RedMapDoor);
 	void contact_RedMapDoor(Player* myplayer);
 };
 class YellowMapDoor :public mapdoor
 {
 public:
 	void contact_YellowMapDoor(Player* myplayer);
+	CREATE_FUNC(YellowMapDoor);
 };
 
 

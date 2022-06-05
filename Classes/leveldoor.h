@@ -9,7 +9,9 @@ class leveldoor :public door
 public:
 	void contact_leveldoor();
 
-	void bindSpriteAndScene(Sprite* sprite,Scene* scene);                 // 关卡门类继承自门类
+	void bindSpriteAndScene(Sprite* sprite,Scene* scene);  // 关卡门类继承自门类
+
+	CREATE_FUNC(leveldoor);
 protected:                                                                //含有特殊的绑定函数  需要精灵以及场景作为参数
 	 Scene* myScene;                                                      //调用后会切换当前的场景
 };
