@@ -2,10 +2,6 @@
 #define _Player_H_
 #include "cocos2d.h"    
 #include "Entity.h"
-#include "Monster.h"
-#include "BossMonster.h"
-#include"CommomMonster.h"
-#include"GainMonster.h"
 using namespace cocos2d;
 class Player :public Entity
 {
@@ -38,6 +34,7 @@ public:
 	void Get_Def(int Def);
 	void Get_Exp(int Exp);
 
+	template<typename T>
 	bool fight(T monster);//Õ½¶·
 	void Move(EventKeyboard::KeyCode keyCode, Event* event);//ÐÐ×ß
 

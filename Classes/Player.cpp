@@ -17,7 +17,7 @@ bool Player:: init()
 {
 // ¼üÅÌÊÂ¼þ¼àÌý
 	auto keyListener = EventListenerKeyboard::create();
-	keyListener->onKeyPressed = CC_CALLBACK_2(Player::Move(), this);
+	keyListener->onKeyPressed = CC_CALLBACK_2(Player::Move, this);
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(keyListener, this);
 
 	return true;
