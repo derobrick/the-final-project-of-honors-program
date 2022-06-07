@@ -8,4 +8,5 @@ public:
 	virtual bool getSuck();
 	//»ñÈ¡ÊÇ·ñ±©»÷
 	virtual bool getCrit();
+	CREATE_FUNC(Common);
 };

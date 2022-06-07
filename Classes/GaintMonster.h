@@ -12,4 +12,6 @@ public:
 	int suckRate;
 	//传入概率 判断是否触发
 	bool isTriggle(int rate);
+
+	CREATE_FUNC(Gaint);
 };
