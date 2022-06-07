@@ -8,5 +8,6 @@ public:
 	virtual bool getSuck();
 	//»ñÈ¡ÊÇ·ñ±©»÷
 	virtual bool getCrit();
+	virtual void Attack(Player* player);
 	CREATE_FUNC(Common);
 };

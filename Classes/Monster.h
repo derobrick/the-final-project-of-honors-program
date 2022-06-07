@@ -17,8 +17,7 @@ public:
     int Get_Gold() { return m_Gold; }
     int Get_Experience() { return m_Exp; }
 
-    void Hpchange(int Hp);
-
+    virtual void Hpchange(int Hp);
     virtual void Attack(Player* player);
     Sprite* getSprite();               /*获取精灵对象*/
     void bindSprite(Sprite* sprite);     /*绑定精灵对象*/

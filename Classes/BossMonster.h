@@ -12,6 +12,6 @@ public:
 	int critRate;
 	//传入概率 判断是否触发
 	bool isTriggle(int rate);
-
+	virtual void Attack(Player* player);
 	CREATE_FUNC(Boss);
 };
