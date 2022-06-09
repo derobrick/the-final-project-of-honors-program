@@ -1,6 +1,6 @@
 #include "BossMonster.h"
 
-Bossone::Bossone()
+Boss::Boss()
 {
 	this->m_Hp = 1000;
 	this->m_Attack = 200;
@@ -10,22 +10,7 @@ Bossone::Bossone()
 	this->suckRate = 50;
 	this->critRate = 50;
 }
-Bossone::~Bossone()
-{
-}
-
-Bosstwo::Bosstwo()
-{
-	this->m_Hp = 800;
-	this->m_Attack = 250;
-	this->m_Defense = 250;
-	this->m_Gold = 500;
-	this->m_Exp = 500;
-	this->suckRate = 40;
-	this->critRate = 60;
-}
-
-Bosstwo::~Bosstwo()
+Boss::~Boss()
 {
 }
 
