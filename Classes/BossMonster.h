@@ -2,8 +2,6 @@
 class Boss :public Monster
 {
 public:
-	Boss();
-	~Boss();
 	//获取是否吸血
 	virtual bool getSuck();
 	//获取是否暴击
@@ -12,6 +10,17 @@ public:
 	int critRate;
 	//传入概率 判断是否触发
 	bool isTriggle(int rate);
-	virtual void Attack(Player* player);
-	CREATE_FUNC(Boss);
+
+};
+class Bossone :public Boss
+{
+	Bossone();
+	~Bossone();
+	CREATE_FUNC(Bossone);
+};
+class Bosstwo :public Boss
+{
+	Bosstwo();
+	~Bosstwo();
+	CREATE_FUNC(Bosstwo);
 };

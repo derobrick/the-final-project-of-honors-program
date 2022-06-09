@@ -1,6 +1,6 @@
 #include "GaintMonster.h"
 
-Gaint::Gaint()
+Gaintone::Gaintone()
 {
 	this->m_Hp = 500;
 	this->m_Attack = 100;
@@ -9,9 +9,19 @@ Gaint::Gaint()
 	this->m_Exp = 300;
 	this->suckRate = 40;
 }
-Gaint::~Gaint()
+Gaintone::~Gaintone(){}
+
+Gainttwo::Gainttwo()
 {
+	this->m_Hp = 700;
+	this->m_Attack = 150;
+	this->m_Defense = 100;
+	this->m_Gold = 200;
+	this->m_Exp = 300;
+	this->suckRate = 50;
 }
+Gainttwo::~Gainttwo() {}
+
 void Monster::Hpchange(int Hp) { this->m_Hp = m_Hp + Hp; }
 
 bool Gaint::getSuck()
@@ -25,7 +35,7 @@ bool Gaint::getSuck()
 
 bool Gaint::getCrit()
 {
-	return false;
+0	return false;
 }
 bool Gaint::isTriggle(int rate)
 {
@@ -39,7 +49,7 @@ bool Gaint::isTriggle(int rate)
 	else
 		return false;
 }
-void Monster::Attack(Player* player)
+void Gaint::Attack(Player* player)
 {
 	int addHp = 0;
 	//¼ÆËãÎüÑª

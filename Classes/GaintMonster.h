@@ -3,8 +3,7 @@
 class Gaint :public Monster
 {
 public:
-	Gaint();
-	~Gaint();
+	
 	//获取是否吸血
 	virtual bool getSuck();
 	//获取是否暴击
@@ -12,6 +11,19 @@ public:
 	int suckRate;
 	//传入概率 判断是否触发
 	bool isTriggle(int rate);
-	virtual void Attack(Player* player);
-	CREATE_FUNC(Gaint);
+
 };
+
+class Gaintone :public Gaint
+{
+	Gaintone();
+	~Gaintone();
+	CREATE_FUNC(Gaintone);
+};
+class Gainttwo :public Gaint
+{
+	Gainttwo();
+	~Gainttwo();
+	CREATE_FUNC(Gainttwo);
+};
+

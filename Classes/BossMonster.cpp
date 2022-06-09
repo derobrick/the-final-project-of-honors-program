@@ -1,6 +1,6 @@
 #include "BossMonster.h"
 
-Boss::Boss()
+Bossone::Bossone()
 {
 	this->m_Hp = 1000;
 	this->m_Attack = 200;
@@ -10,8 +10,22 @@ Boss::Boss()
 	this->suckRate = 50;
 	this->critRate = 50;
 }
+Bossone::~Bossone()
+{
+}
 
-Boss::~Boss()
+Bosstwo::Bosstwo()
+{
+	this->m_Hp = 800;
+	this->m_Attack = 250;
+	this->m_Defense = 250;
+	this->m_Gold = 500;
+	this->m_Exp = 500;
+	this->suckRate = 40;
+	this->critRate = 60;
+}
+
+Bosstwo::~Bosstwo()
 {
 }
 
@@ -51,7 +65,7 @@ bool Boss::isTriggle(int rate)
 		return false;
 }
 
-void Monster::Attack(Player* player)
+void Boss::Attack(Player* player)
 {
 	int addHp = 0;
 	bool isCrit = false;
