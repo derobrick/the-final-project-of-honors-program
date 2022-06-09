@@ -16,12 +16,14 @@ public:
 
 class Gaintone :public Gaint
 {
+public:
 	Gaintone();
 	~Gaintone();
 	CREATE_FUNC(Gaintone);
 };
 class Gainttwo :public Gaint
 {
+public:
 	Gainttwo();
 	~Gainttwo();
 	CREATE_FUNC(Gainttwo);
