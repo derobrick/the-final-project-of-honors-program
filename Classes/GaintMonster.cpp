@@ -35,7 +35,7 @@ bool Gaint::getSuck()
 
 bool Gaint::getCrit()
 {
-0	return false;
+	return false;
 }
 bool Gaint::isTriggle(int rate)
 {

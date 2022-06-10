@@ -24,6 +24,7 @@ public:
 	void Use_BlueKey();
 	void Use_YellowKey();
 	void Use_gold(int gold);
+	void Use_Exp(int Exp);
 
 	void Get_RedKey();//获得道具
 	void Get_BlueKey();
@@ -33,6 +34,7 @@ public:
 	void Get_Att(int Att);
 	void Get_Def(int Def);
 	void Get_Exp(int Exp);
+	void Get_Lv();
 
 	template<typename T>
 	bool fight(T monster);//战斗
@@ -41,7 +43,6 @@ public:
 private:
 	int m_Level;//等级
 	int m_Hp;    //血量
-	int m_MaxHp;//最大血量
 	int m_Attack;//攻击力
 	int m_Defense;//防御力
 	int m_Exp;//经验

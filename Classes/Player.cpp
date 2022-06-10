@@ -3,7 +3,6 @@ Player::Player()
 {
 	m_Level = 1;
 	m_Hp = 1000;
-	m_MaxHp = 2000;
 	m_Attack = 10;
 	m_Defense = 10;
 	m_Exp = 0;
@@ -26,21 +25,18 @@ void Player::Use_RedKey() { this->m_RedKey--; }  //使用道具
 void Player::Use_BlueKey() { this->m_BlueKey--; }
 void Player::Use_YellowKey() { this->m_YellowKey--; }
 void Player::Use_gold(int gold) { this->m_gold = m_gold - gold; }
+void Player::Use_Exp(int Exp) { this->m_Exp= m_Exp - Exp; }
+
 
 void Player::Get_RedKey() { this->m_RedKey++; }  //获得道具
 void Player::Get_BlueKey() { this->m_BlueKey++; }
 void Player::Get_YellowKey() { this->m_YellowKey++; }
 void Player::Get_gold(int gold) { this->m_gold = m_gold + gold; }
-void Player::Get_Hp(int Hp) 
-{
-	if (m_Hp + Hp > m_MaxHp)
-		this->m_Hp = m_MaxHp;
-	else
-		this->m_Hp = m_Hp + Hp;
-}
+void Player::Get_Hp(int Hp) {this->m_Hp = m_Hp + Hp;}
 void Player::Get_Att(int Att) { this->m_Attack = m_Attack + Att; }
 void Player::Get_Def(int Def) { this->m_Defense = m_Defense + Def; }
 void Player::Get_Exp(int Exp) { this->m_Exp = m_Exp + Exp; }
+void Player::Get_Lv() { this->m_Level++; }
 
 
 template<typename T> 
