@@ -24,6 +24,8 @@
 
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "Player.h"
+#include "InitialScene.h"
 
 // #define USE_AUDIO_ENGINE 1
 
@@ -73,7 +75,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
-        glview = GLViewImpl::createWithRect("my_final_project", cocos2d::Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
+        glview = GLViewImpl::create("my_final_project");
 #else
         glview = GLViewImpl::create("my_final_project");
 #endif
@@ -108,7 +110,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    auto scene = InitialWorld::createScene();
 
     // run
     director->runWithScene(scene);

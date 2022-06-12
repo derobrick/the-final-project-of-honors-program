@@ -1,5 +1,22 @@
 #include "CommonMonster.h"
 
+bool Common::getSuck()
+{
+	return false;
+}
+
+bool Common::getCrit()
+{
+	return false;
+}
+
+void Common::Attack(Player* player)
+{
+	//计算真实伤害
+	int TrueDamage = (this->m_Attack - player->Look_Def()) > 0 ? (this->m_Attack - player->Look_Def()) : 1;
+	player->Get_Hp(-TrueDamage);
+}
+
 Commonone::Commonone()
 {
 	this->m_Hp = 300;
@@ -22,23 +39,4 @@ Commontwo::Commontwo()
 }
 Commontwo::~Commontwo()
 {
-}
-
-void Monster::Hpchange(int Hp) { this->m_Hp = m_Hp + Hp; }
-
-bool Common::getSuck()
-{
-	return false;
-}
-
-bool Common::getCrit()
-{
-	return false;
-}
-
-void Common::Attack(Player* player)
-{
-	//计算真实伤害
-	int TrueDamage = (this->m_Attack - player->Look_Def()) > 0 ? (this->m_Attack - player->Look_Def()) : 1;
-	player->Get_Hp(-TrueDamage);
 }

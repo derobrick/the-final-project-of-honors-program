@@ -1,5 +1,7 @@
+#pragma once
 #include"Monster.h"
-class Common :public Monster 
+#include "Player.h"
+class Common :public Monster
 {
 public:
 	//»ñÈ¡ÊÇ·ñÎüÑª

@@ -1,11 +1,14 @@
+#pragma
 #ifndef _Monster_H_
 #define _Monster_H_
 #include "cocos2d.h"   
 #include "Player.h"
 using namespace cocos2d;
-class Monster :public NODE
+class Monster :public Node
 {
 public:
+    Monster();
+    ~Monster();
     //获取是否吸血
     virtual bool getSuck() = 0;
     //获取是否暴击
@@ -17,10 +20,8 @@ public:
     int Get_Gold() { return m_Gold; }
     int Get_Experience() { return m_Exp; }
 
-    virtual void Hpchange(int Hp);
-    virtual void Attack(Player* player);
-    Sprite* getSprite();               /*获取精灵对象*/
-    void bindSprite(Sprite* sprite);     /*绑定精灵对象*/
+    void Hpchange(int Hp) { this->m_Hp = m_Hp - Hp; };
+    virtual void Attack(Player* player) = 0;
 
 protected:
     int m_Hp;    //血量
@@ -28,7 +29,6 @@ protected:
     int m_Defense;//防御力
     int m_Gold;//金币
     int m_Exp;//经验
-    Sprite* m_sprite;
 };
 #endif;
 

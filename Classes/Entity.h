@@ -9,6 +9,7 @@ public:
 	~Entity();
 	Sprite* getSprite();               /*获取精灵对象*/
 	void bindSprite(Sprite* sprite);     /*绑定精灵对象*/
+
 protected:
 	Sprite* m_sprite;
 };

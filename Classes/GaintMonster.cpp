@@ -9,7 +9,7 @@ Gaintone::Gaintone()
 	this->m_Exp = 300;
 	this->suckRate = 40;
 }
-Gaintone::~Gaintone(){}
+Gaintone::~Gaintone() {}
 
 Gainttwo::Gainttwo()
 {
@@ -22,7 +22,7 @@ Gainttwo::Gainttwo()
 }
 Gainttwo::~Gainttwo() {}
 
-void Monster::Hpchange(int Hp) { this->m_Hp = m_Hp + Hp; }
+
 
 bool Gaint::getSuck()
 {

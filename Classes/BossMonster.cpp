@@ -10,11 +10,12 @@ Boss::Boss()
 	this->suckRate = 50;
 	this->critRate = 50;
 }
+
 Boss::~Boss()
 {
 }
 
-void Monster::Hpchange(int Hp) { this->m_Hp = m_Hp + Hp; }
+
 
 bool Boss::getSuck()
 {

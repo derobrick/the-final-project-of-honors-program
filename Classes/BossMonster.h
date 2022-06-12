@@ -15,3 +15,4 @@ public:
 	virtual void Attack(Player* player);
 	CREATE_FUNC(Boss);
 };
+
